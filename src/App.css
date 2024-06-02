@@ -1,0 +1,24 @@
+body{
+    
+   
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+      
+      
+      
+overflow-x: hidden;
+box-sizing: border-box;
+
+
+}
+.pic{
+object-fit: contain;
+
+
+}
+.box{
+    font-size: calc(10px + 1vw);
+
+}
