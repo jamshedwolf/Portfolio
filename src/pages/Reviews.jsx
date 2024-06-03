@@ -15,7 +15,7 @@ function Reviews() {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: null, // hide previous arrow
