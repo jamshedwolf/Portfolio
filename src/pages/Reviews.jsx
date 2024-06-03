@@ -20,7 +20,7 @@ function Reviews() {
     slidesToScroll: 1,
     prevArrow: null, // hide previous arrow
     nextArrow: null, // hide next arrow
-    
+    autoplay: true,
 
     responsive: [
       {
