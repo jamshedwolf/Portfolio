@@ -13,11 +13,41 @@ import p7 from "../assets/p7.jpg"
 function Reviews() {
 
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    prevArrow: null, // hide previous arrow
+    nextArrow: null, // hide next arrow
+    
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <>
@@ -25,14 +55,14 @@ function Reviews() {
 
 
 
-      <div className="h-screen p-20 bg-black">
+      <div className=" text-center py-5 lg:h-screen lg:p-20 bg-black overflow-x-hidden">
       <div className=" text-5xl text-orange-500 font-bold text-center ">Testamonials</div>
         <Slider {...settings} className='flex space-y-8'>
 
 
 
          
-          <div className='border p-10 md:mt-10 w-[500px]  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px]  bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex  gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p7} alt="" className="w-full h-full" />
@@ -47,7 +77,7 @@ function Reviews() {
             </div>
 
           </div>
-          <div className='border p-10 md:mt-10  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px] bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p2} alt="" className="w-full h-full" />
@@ -64,7 +94,7 @@ function Reviews() {
             </div>
 
           </div>
-          <div className='border p-10 md:mt-10  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px]  bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p1} alt="" className="w-full h-full" />
@@ -79,7 +109,7 @@ function Reviews() {
             </div>
 
           </div>
-          <div className='border p-10 md:mt-10  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px] bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p3} alt="" className="w-full h-full" />
@@ -94,7 +124,7 @@ function Reviews() {
             </div>
 
           </div>
-          <div className='border p-10 md:mt-10  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px] bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p4} alt="" className="w-full h-full" />
@@ -109,7 +139,7 @@ function Reviews() {
             </div>
 
           </div>
-          <div className='border p-14 md:mt-10  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px]  bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p5} alt="" className="w-full h-full" />
@@ -120,11 +150,12 @@ function Reviews() {
               </div>
             </div>
             <div className="p-4  border-l rounded-full border-orange-500 border-r ">
-            Jamsheed Ali is a troubleshooting virtuoso, adept at untangling even the most intricate coding conundrums. 
+            Jamsheed Ali is a troubleshooting virtuoso, adept at untangling even the most intricate coding conundrums.
+            he is also good listener and speaker for and best at understanding  
             </div>
 
           </div>
-          <div className='border p-10 md:mt-10  bg-white rounded-[40px] shadow-lg border' >
+          <div className='border p-10 md:mt-10 max-w-[350px] bg-white rounded-[40px] shadow-lg border' >
             <div className=" mx-auto flex gap-4 justify-center  text-center ">
               <div className="h-[100px] w-[100px]  overflow-hidden rounded-full border-2 border-orange-500">
                 <img src={p6} alt="" className="w-full h-full" />

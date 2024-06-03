@@ -45,7 +45,7 @@ function navhandler() {
 {/* 
       small screen nav */}
 
-<div className={nav? "w-[50vw] h-screen absolute top-0 left-0 transition-all duration-300 ease-in bg-[#202121] lg:hidden text-white p-8":"fixed left-[-200px] transition-all duration-500 ease-in-out "}>
+<div className={nav? "w-[50vw] h-screen absolute top-0 z-[10] left-0 transition-all duration-300 ease-in bg-[#202121] lg:hidden text-white p-8":"fixed left-[-200px] transition-all duration-500 ease-in-out "}>
 <div className="text-[24px]  font-bold block lg:hidden text-orange-600">Coder Ali.</div>
 
 
