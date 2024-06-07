@@ -8,13 +8,14 @@ import "../App.css"
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import { motion } from 'framer-motion';
+import Bento from './Bento'
 
 import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
 
   return (
-    <><div className="bg-black w-[100vw] overflow-x-hidden">
+    <><div className="bg-black  w-[100vw] overflow-x-hidden">
 
       <Nav />
 
@@ -64,9 +65,13 @@ function Home() {
 
       </motion.div>
     </div>
+    <Bento/>
       <About />
+      
+      
       <Projects />
       <Reviews />
+      
       <Footer />
       
     </>

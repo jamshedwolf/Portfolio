@@ -16,7 +16,7 @@ function About() {
     transition={{ duration: 3 }}
     className=' p-10 lg:h-screen   bg-black'>
       <div className="text-center">
-  <p className="text-5xl font-bold text-orange-500">Skills Overview</p>
+  <p className="text-5xl font-bold text-orange-500 ">Skills Overview</p>
   <p className="text-[26px] mt-8 text-white">I am expert in these skills. </p>
 </div>
   <div className="grid grid-col-1 gap-8 lg:grid-cols-3 place-items-center pt-10 ">

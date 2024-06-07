@@ -24,6 +24,7 @@ function navhandler() {
 
         <div className=" gap-6 hidden lg:flex text-[24px]">
           <Link to="/">Home</Link>
+          <Link to="/Aboutme">About me</Link>
           <Link to="/Skills">Skills</Link>
 
           <Link to="/projects">Projects</Link>
@@ -51,10 +52,12 @@ function navhandler() {
 
 <div className=" gap-6 mt-8 flex flex-col  lg:hidden text-[15px]">
   <Link to="/">Home</Link>
+  <Link to="/Aboutme">About me</Link>
   <Link to="/Skills">Skills</Link>
 
   <Link to="/projects">Projects</Link>
   <Link to="/Reviews">Reviews</Link>
+  
 
 
 </div>
